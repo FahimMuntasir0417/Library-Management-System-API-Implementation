@@ -1,0 +1,692 @@
+[
+  {
+    "model": "book.bookcategory",
+    "pk": 1,
+    "fields": {
+      "name": "Fiction",
+      "description": "Imaginative narrative works including novels and short stories",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "book.bookcategory",
+    "pk": 2,
+    "fields": {
+      "name": "Science Fiction",
+      "description": "Speculative fiction dealing with imaginative concepts like futuristic science and technology",
+      "created_at": "2024-01-15T10:05:00Z",
+      "updated_at": "2024-01-15T10:05:00Z"
+    }
+  },
+  {
+    "model": "book.bookcategory",
+    "pk": 3,
+    "fields": {
+      "name": "Mystery",
+      "description": "Stories centered around solving a puzzle, crime, or mysterious event",
+      "created_at": "2024-01-15T10:10:00Z",
+      "updated_at": "2024-01-15T10:10:00Z"
+    }
+  },
+  {
+    "model": "book.bookcategory",
+    "pk": 4,
+    "fields": {
+      "name": "Biography",
+      "description": "Accounts of people's lives written by other authors",
+      "created_at": "2024-01-15T10:15:00Z",
+      "updated_at": "2024-01-15T10:15:00Z"
+    }
+  },
+  {
+    "model": "book.bookcategory",
+    "pk": 5,
+    "fields": {
+      "name": "Self-Help",
+      "description": "Books focused on personal development and self-improvement",
+      "created_at": "2024-01-15T10:20:00Z",
+      "updated_at": "2024-01-15T10:20:00Z"
+    }
+  },
+  {
+    "model": "book.bookauthor",
+    "pk": 1,
+    "fields": {
+      "name": "J.K. Rowling",
+      "biography": "British author best known for the Harry Potter series",
+      "created_at": "2024-01-15T10:25:00Z",
+      "updated_at": "2024-01-15T10:25:00Z"
+    }
+  },
+  {
+    "model": "book.bookauthor",
+    "pk": 2,
+    "fields": {
+      "name": "Stephen King",
+      "biography": "American author of horror, supernatural fiction, suspense, and fantasy novels",
+      "created_at": "2024-01-15T10:30:00Z",
+      "updated_at": "2024-01-15T10:30:00Z"
+    }
+  },
+  {
+    "model": "book.bookauthor",
+    "pk": 3,
+    "fields": {
+      "name": "George R.R. Martin",
+      "biography": "American novelist and short-story writer of fantasy, horror, and science fiction",
+      "created_at": "2024-01-15T10:35:00Z",
+      "updated_at": "2024-01-15T10:35:00Z"
+    }
+  },
+  {
+    "model": "book.bookauthor",
+    "pk": 4,
+    "fields": {
+      "name": "Agatha Christie",
+      "biography": "English writer known for her detective novels and short story collections",
+      "created_at": "2024-01-15T10:40:00Z",
+      "updated_at": "2024-01-15T10:40:00Z"
+    }
+  },
+  {
+    "model": "book.bookauthor",
+    "pk": 5,
+    "fields": {
+      "name": "Dan Brown",
+      "biography": "American author best known for his thriller novels including The Da Vinci Code",
+      "created_at": "2024-01-15T10:45:00Z",
+      "updated_at": "2024-01-15T10:45:00Z"
+    }
+  },
+  {
+    "model": "book.bookauthor",
+    "pk": 6,
+    "fields": {
+      "name": "Isaac Asimov",
+      "biography": "American writer and professor of biochemistry, known for his works of science fiction",
+      "created_at": "2024-01-15T10:50:00Z",
+      "updated_at": "2024-01-15T10:50:00Z"
+    }
+  },
+  {
+    "model": "book.bookauthor",
+    "pk": 7,
+    "fields": {
+      "name": "Toni Morrison",
+      "biography": "American novelist, essayist, editor, and professor who won the Nobel Prize in Literature",
+      "created_at": "2024-01-15T10:55:00Z",
+      "updated_at": "2024-01-15T10:55:00Z"
+    }
+  },
+  {
+    "model": "book.bookauthor",
+    "pk": 8,
+    "fields": {
+      "name": "Malcolm Gladwell",
+      "biography": "Canadian journalist, author, and public speaker known for his books on psychology and sociology",
+      "created_at": "2024-01-15T11:00:00Z",
+      "updated_at": "2024-01-15T11:00:00Z"
+    }
+  },
+  {
+    "model": "book.bookauthor",
+    "pk": 9,
+    "fields": {
+      "name": "Michelle Obama",
+      "biography": "American attorney and author who served as first lady of the United States",
+      "created_at": "2024-01-15T11:05:00Z",
+      "updated_at": "2024-01-15T11:05:00Z"
+    }
+  },
+  {
+    "model": "book.bookauthor",
+    "pk": 10,
+    "fields": {
+      "name": "J.R.R. Tolkien",
+      "biography": "English writer, poet, philologist, and academic, best known for The Hobbit and The Lord of the Rings",
+      "created_at": "2024-01-15T11:10:00Z",
+      "updated_at": "2024-01-15T11:10:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 1,
+    "fields": {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": 1,
+      "category": 1,
+      "isbn": "9780747532743",
+      "availability_status": "AVAILABLE",
+      "published_date": "1997-06-26",
+      "pages": 223,
+      "cover_image": null,
+      "summary": "A young wizard discovers his magical heritage and begins his education at Hogwarts School of Witchcraft and Wizardry.",
+      "total_copies": 3,
+      "created_at": "2024-01-15T11:15:00Z",
+      "updated_at": "2024-01-15T11:15:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 2,
+    "fields": {
+      "title": "The Shining",
+      "author": 2,
+      "category": 1,
+      "isbn": "9780385121675",
+      "availability_status": "BORROWED",
+      "published_date": "1977-01-28",
+      "pages": 447,
+      "cover_image": null,
+      "summary": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T11:20:00Z",
+      "updated_at": "2024-01-15T11:20:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 3,
+    "fields": {
+      "title": "A Game of Thrones",
+      "author": 3,
+      "category": 1,
+      "isbn": "9780553103540",
+      "availability_status": "AVAILABLE",
+      "published_date": "1996-08-06",
+      "pages": 694,
+      "cover_image": null,
+      "summary": "Noble families fight for control of the Iron Throne of the Seven Kingdoms.",
+      "total_copies": 4,
+      "created_at": "2024-01-15T11:25:00Z",
+      "updated_at": "2024-01-15T11:25:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 4,
+    "fields": {
+      "title": "Murder on the Orient Express",
+      "author": 4,
+      "category": 3,
+      "isbn": "9780062693662",
+      "availability_status": "AVAILABLE",
+      "published_date": "1934-01-01",
+      "pages": 256,
+      "cover_image": null,
+      "summary": "Detective Hercule Poirot investigates a murder aboard a luxury train stranded by a snowstorm.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T11:30:00Z",
+      "updated_at": "2024-01-15T11:30:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 5,
+    "fields": {
+      "title": "The Da Vinci Code",
+      "author": 5,
+      "category": 3,
+      "isbn": "9780307474278",
+      "availability_status": "BORROWED",
+      "published_date": "2003-03-18",
+      "pages": 489,
+      "cover_image": null,
+      "summary": "A murder in the Louvre museum leads to a battle between the Priory of Sion and Opus Dei over the possibility of Jesus being married to Mary Magdalene.",
+      "total_copies": 3,
+      "created_at": "2024-01-15T11:35:00Z",
+      "updated_at": "2024-01-15T11:35:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 6,
+    "fields": {
+      "title": "Foundation",
+      "author": 6,
+      "category": 2,
+      "isbn": "9780553293357",
+      "availability_status": "AVAILABLE",
+      "published_date": "1951-06-01",
+      "pages": 255,
+      "cover_image": null,
+      "summary": "A psychohistorian foresees the fall of the Galactic Empire and establishes a foundation to preserve knowledge.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T11:40:00Z",
+      "updated_at": "2024-01-15T11:40:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 7,
+    "fields": {
+      "title": "Beloved",
+      "author": 7,
+      "category": 1,
+      "isbn": "9781400033416",
+      "availability_status": "AVAILABLE",
+      "published_date": "1987-09-02",
+      "pages": 324,
+      "cover_image": null,
+      "summary": "A former slave is haunted by the ghost of her deceased daughter.",
+      "total_copies": 1,
+      "created_at": "2024-01-15T11:45:00Z",
+      "updated_at": "2024-01-15T11:45:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 8,
+    "fields": {
+      "title": "The Tipping Point",
+      "author": 8,
+      "category": 5,
+      "isbn": "9780316346627",
+      "availability_status": "AVAILABLE",
+      "published_date": "2000-03-01",
+      "pages": 288,
+      "cover_image": null,
+      "summary": "Explores how small actions can trigger large social changes.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T11:50:00Z",
+      "updated_at": "2024-01-15T11:50:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 9,
+    "fields": {
+      "title": "Becoming",
+      "author": 9,
+      "category": 4,
+      "isbn": "9781524763138",
+      "availability_status": "BORROWED",
+      "published_date": "2018-11-13",
+      "pages": 426,
+      "cover_image": null,
+      "summary": "Memoir of former First Lady Michelle Obama.",
+      "total_copies": 3,
+      "created_at": "2024-01-15T11:55:00Z",
+      "updated_at": "2024-01-15T11:55:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 10,
+    "fields": {
+      "title": "The Lord of the Rings",
+      "author": 10,
+      "category": 2,
+      "isbn": "9780544003415",
+      "availability_status": "AVAILABLE",
+      "published_date": "1954-07-29",
+      "pages": 1178,
+      "cover_image": null,
+      "summary": "A hobbit undertakes a quest to destroy a powerful ring and save Middle-earth.",
+      "total_copies": 4,
+      "created_at": "2024-01-15T12:00:00Z",
+      "updated_at": "2024-01-15T12:00:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 11,
+    "fields": {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": 1,
+      "category": 1,
+      "isbn": "9780439064873",
+      "availability_status": "AVAILABLE",
+      "published_date": "1998-07-02",
+      "pages": 251,
+      "cover_image": null,
+      "summary": "Harry's second year at Hogwarts as the Chamber of Secrets is opened.",
+      "total_copies": 3,
+      "created_at": "2024-01-15T12:05:00Z",
+      "updated_at": "2024-01-15T12:05:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 12,
+    "fields": {
+      "title": "It",
+      "author": 2,
+      "category": 1,
+      "isbn": "9780670813025",
+      "availability_status": "BORROWED",
+      "published_date": "1986-09-15",
+      "pages": 1138,
+      "cover_image": null,
+      "summary": "Seven adults return to their hometown to confront a nightmare they first stumbled on as teenagers.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T12:10:00Z",
+      "updated_at": "2024-01-15T12:10:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 13,
+    "fields": {
+      "title": "A Clash of Kings",
+      "author": 3,
+      "category": 1,
+      "isbn": "9780553108033",
+      "availability_status": "AVAILABLE",
+      "published_date": "1998-11-16",
+      "pages": 761,
+      "cover_image": null,
+      "summary": "The second book in A Song of Ice and Fire series.",
+      "total_copies": 3,
+      "created_at": "2024-01-15T12:15:00Z",
+      "updated_at": "2024-01-15T12:15:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 14,
+    "fields": {
+      "title": "And Then There Were None",
+      "author": 4,
+      "category": 3,
+      "isbn": "9780062073488",
+      "availability_status": "AVAILABLE",
+      "published_date": "1939-11-06",
+      "pages": 272,
+      "cover_image": null,
+      "summary": "Ten strangers are lured to an isolated island and killed one by one.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T12:20:00Z",
+      "updated_at": "2024-01-15T12:20:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 15,
+    "fields": {
+      "title": "Angels & Demons",
+      "author": 5,
+      "category": 3,
+      "isbn": "9780743493468",
+      "availability_status": "BORROWED",
+      "published_date": "2000-05-01",
+      "pages": 616,
+      "cover_image": null,
+      "summary": "Robert Langdon works to solve a murder and prevent a terrorist act against the Vatican.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T12:25:00Z",
+      "updated_at": "2024-01-15T12:25:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 16,
+    "fields": {
+      "title": "I, Robot",
+      "author": 6,
+      "category": 2,
+      "isbn": "9780553382563",
+      "availability_status": "AVAILABLE",
+      "published_date": "1950-12-02",
+      "pages": 253,
+      "cover_image": null,
+      "summary": "A collection of stories about the interaction of humans and robots.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T12:30:00Z",
+      "updated_at": "2024-01-15T12:30:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 17,
+    "fields": {
+      "title": "The Bluest Eye",
+      "author": 7,
+      "category": 1,
+      "isbn": "9780307278449",
+      "availability_status": "AVAILABLE",
+      "published_date": "1970-01-01",
+      "pages": 206,
+      "cover_image": null,
+      "summary": "Story of a young African-American girl who longs for blue eyes.",
+      "total_copies": 1,
+      "created_at": "2024-01-15T12:35:00Z",
+      "updated_at": "2024-01-15T12:35:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 18,
+    "fields": {
+      "title": "Outliers",
+      "author": 8,
+      "category": 5,
+      "isbn": "9780316017923",
+      "availability_status": "AVAILABLE",
+      "published_date": "2008-11-18",
+      "pages": 309,
+      "cover_image": null,
+      "summary": "Explores why some people succeed far more than others.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T12:40:00Z",
+      "updated_at": "2024-01-15T12:40:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 19,
+    "fields": {
+      "title": "The Light We Carry",
+      "author": 9,
+      "category": 5,
+      "isbn": "9780593237465",
+      "availability_status": "BORROWED",
+      "published_date": "2022-11-15",
+      "pages": 336,
+      "cover_image": null,
+      "summary": "Michelle Obama shares practical wisdom and strategies for staying hopeful in uncertain times.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T12:45:00Z",
+      "updated_at": "2024-01-15T12:45:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 20,
+    "fields": {
+      "title": "The Hobbit",
+      "author": 10,
+      "category": 2,
+      "isbn": "9780547928227",
+      "availability_status": "AVAILABLE",
+      "published_date": "1937-09-21",
+      "pages": 310,
+      "cover_image": null,
+      "summary": "A hobbit joins a quest to reclaim a dwarf kingdom from a dragon.",
+      "total_copies": 3,
+      "created_at": "2024-01-15T12:50:00Z",
+      "updated_at": "2024-01-15T12:50:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 21,
+    "fields": {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": 1,
+      "category": 1,
+      "isbn": "9780439136365",
+      "availability_status": "AVAILABLE",
+      "published_date": "1999-07-08",
+      "pages": 317,
+      "cover_image": null,
+      "summary": "Harry's third year at Hogwarts and the escape of Sirius Black.",
+      "total_copies": 3,
+      "created_at": "2024-01-15T12:55:00Z",
+      "updated_at": "2024-01-15T12:55:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 22,
+    "fields": {
+      "title": "The Stand",
+      "author": 2,
+      "category": 2,
+      "isbn": "9780307743688",
+      "availability_status": "BORROWED",
+      "published_date": "1978-10-03",
+      "pages": 1153,
+      "cover_image": null,
+      "summary": "A pandemic wipes out most of the world's population, setting the stage for a battle between good and evil.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T13:00:00Z",
+      "updated_at": "2024-01-15T13:00:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 23,
+    "fields": {
+      "title": "A Storm of Swords",
+      "author": 3,
+      "category": 1,
+      "isbn": "9780553106633",
+      "availability_status": "AVAILABLE",
+      "published_date": "2000-08-08",
+      "pages": 973,
+      "cover_image": null,
+      "summary": "The third book in A Song of Ice and Fire series.",
+      "total_copies": 3,
+      "created_at": "2024-01-15T13:05:00Z",
+      "updated_at": "2024-01-15T13:05:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 24,
+    "fields": {
+      "title": "Death on the Nile",
+      "author": 4,
+      "category": 3,
+      "isbn": "9780062073556",
+      "availability_status": "AVAILABLE",
+      "published_date": "1937-11-01",
+      "pages": 288,
+      "cover_image": null,
+      "summary": "Hercule Poirot investigates a murder during a Nile cruise.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T13:10:00Z",
+      "updated_at": "2024-01-15T13:10:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 25,
+    "fields": {
+      "title": "Inferno",
+      "author": 5,
+      "category": 3,
+      "isbn": "9780385537858",
+      "availability_status": "BORROWED",
+      "published_date": "2013-05-14",
+      "pages": 461,
+      "cover_image": null,
+      "summary": "Robert Langdon races through Europe to stop a global catastrophe.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T13:15:00Z",
+      "updated_at": "2024-01-15T13:15:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 26,
+    "fields": {
+      "title": "The End of Eternity",
+      "author": 6,
+      "category": 2,
+      "isbn": "9780380010320",
+      "availability_status": "AVAILABLE",
+      "published_date": "1955-01-01",
+      "pages": 192,
+      "cover_image": null,
+      "summary": "A time-travel story about an organization that alters reality for the betterment of humankind.",
+      "total_copies": 1,
+      "created_at": "2024-01-15T13:20:00Z",
+      "updated_at": "2024-01-15T13:20:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 27,
+    "fields": {
+      "title": "Song of Solomon",
+      "author": 7,
+      "category": 1,
+      "isbn": "9781400033423",
+      "availability_status": "AVAILABLE",
+      "published_date": "1977-08-12",
+      "pages": 337,
+      "cover_image": null,
+      "summary": "Follows the life of Macon Dead III from birth to adulthood.",
+      "total_copies": 1,
+      "created_at": "2024-01-15T13:25:00Z",
+      "updated_at": "2024-01-15T13:25:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 28,
+    "fields": {
+      "title": "Blink",
+      "author": 8,
+      "category": 5,
+      "isbn": "9780316010665",
+      "availability_status": "AVAILABLE",
+      "published_date": "2005-01-11",
+      "pages": 296,
+      "cover_image": null,
+      "summary": "Explores the power of thinking without thinking.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T13:30:00Z",
+      "updated_at": "2024-01-15T13:30:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 29,
+    "fields": {
+      "title": "American Grown",
+      "author": 9,
+      "category": 4,
+      "isbn": "9780307955826",
+      "availability_status": "BORROWED",
+      "published_date": "2012-04-12",
+      "pages": 272,
+      "cover_image": null,
+      "summary": "Story of the White House Kitchen Garden and gardens across America.",
+      "total_copies": 1,
+      "created_at": "2024-01-15T13:35:00Z",
+      "updated_at": "2024-01-15T13:35:00Z"
+    }
+  },
+  {
+    "model": "book.book",
+    "pk": 30,
+    "fields": {
+      "title": "The Silmarillion",
+      "author": 10,
+      "category": 2,
+      "isbn": "9780618391110",
+      "availability_status": "AVAILABLE",
+      "published_date": "1977-09-15",
+      "pages": 365,
+      "cover_image": null,
+      "summary": "Collection of mythopoeic stories about the creation of Middle-earth.",
+      "total_copies": 2,
+      "created_at": "2024-01-15T13:40:00Z",
+      "updated_at": "2024-01-15T13:40:00Z"
+    }
+  }
+]

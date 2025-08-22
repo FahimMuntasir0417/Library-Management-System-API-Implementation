@@ -1,0 +1,37 @@
+from django.db import models
+
+# Create your models here.
+from django.db import models
+from django.conf import settings
+from book.models import Book   # তোমার Book model import
+
+class Cart(models.Model):
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL, 
+        on_delete=models.CASCADE, 
+        related_name="cart"
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Cart of {self.user.username}"
+
+    @property
+    def total_items(self):
+        return sum(item.quantity for item in self.items.all())
+
+
+class CartItem(models.Model):
+    cart = models.ForeignKey(
+        Cart, on_delete=models.CASCADE, related_name="items"
+    )
+    book = models.ForeignKey(
+        Book, on_delete=models.CASCADE, related_name="cart_items"
+    )
+    quantity = models.PositiveIntegerField(default=1)
+
+    class Meta:
+        unique_together = ('cart', 'book')  # একই book cart-এ একবারই থাকবে
+
+    def __str__(self):
+        return f"{self.book.title} x {self.quantity}"
